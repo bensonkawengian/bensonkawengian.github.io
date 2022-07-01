@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&display=swap');
+
+:root {
+  background: rgb(1,22,39);
+}
+
+body{
+	max-width:40em;
+	margin:0 auto;
+	padding:5px;
+	font-family:'Arsenal',Georgia,serif;
+	font-size:20px;
+	line-height:30px;
+	background-color:rgb(1, 22, 39);
+  color:wheat;
+}
+
+h1,h2,h3,dt,small,.small,footer,label,div.blogparent{
+	font-family:Arsenal;
+	font-weight:normal;
+	font-style:normal
+}
+
+small,.small,footer{
+	font-size:0.8em;
+	color:#666
+}
+
+h1,h2,h3,label{
+	line-height:1em
+}
+
+h1{
+  padding-top:20px;
+  font-size:2em
+}
+
+h2 a{
+	color:rgb(243, 237, 237);
+	text-decoration: underline
+}
+
+h2,h3{
+	margin-top:2em
+}
+
+h3{
+	font-size:1.5em
+}
+
+a{
+	text-decoration:none;
+	color:rgb(201, 175, 27);
+	overflow-wrap:break-word;
+	word-wrap:break-word
+}
+
+a:visited{
+	color:rgb(10, 238, 200)
+}
+
+a:hover{
+	text-decoration:underline
+}
+
+dt{
+	margin-top:2em;
+	font-size:1.2em
+}
+
+li,dd{
+	margin-bottom:1em
+}
+
+figure{
+	margin:0
+}
+
+blockquote{
+	margin:2em;
+	color:#444
+}
+
+pre{
+	overflow-x:auto;
+	color:#fff;
+	background-color:#333;
+	padding:0.25em;
+	line-height:1
+}
+
+code{
+	font-size:0.8em
+}
+
+img {
+	max-width:100%;
+  display:block
+  height: auto;
+}
+
+label{
+	margin:0.5em 0 0.2em
+}
+
+section{
+	margin-bottom:4em
+}
+
+section#tophead{
+	margin-bottom:1em
+}
+
+section#tophead h1{
+	margin:0
+}
+
+section#tophead h1 a{
+	color:rgb(221, 207, 207)
+}
+
+body#home div#content h2 small{
+	margin-left:2em
+}
+
+body#home div#content ul{
+	padding-left:0
+}
+body#home div#content ul li{
+	list-style-type:none
+}
+body#home div#content section#photos img{
+	display:inline
+}
+div.blogparent{
+	font-size:1.2em;
+	margin:1em 0 -0.5em 0
+}
+
+cite {
+	color: #666
+}
