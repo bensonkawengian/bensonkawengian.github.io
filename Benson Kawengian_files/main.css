@@ -3,7 +3,7 @@
 
 /* root */
 :root {
-  background:rgb(2, 6, 31);
+  background: black;
 }
 
 /* selectors styling*/
@@ -15,8 +15,8 @@ body{
 	font-family:'Arsenal',Georgia,serif;
 	font-size:20px;
 	line-height:30px;
-	background-color:rgb(2, 6, 31);
-  color:white;
+	background-color:black;
+  color:wheat;
 }
 
 h1,h2,h3,dt,small,.small,footer,label,div.blogparent{
@@ -36,7 +36,7 @@ h1,h2,h3,label{
 
 h1{
   padding-top:20px;
-	font-size:3em;
+  font-size:2em
 }
 
 h2 a{
@@ -54,13 +54,13 @@ h3{
 
 a{
 	text-decoration:none;
-	color:rgb(4, 237, 245);
+	color:rgb(201, 175, 27);
 	overflow-wrap:break-word;
 	word-wrap:break-word
 }
 
 a:visited{
-	color:rgb(13, 199, 44)8)
+	color:rgb(10, 238, 200)
 }
 
 a:hover{

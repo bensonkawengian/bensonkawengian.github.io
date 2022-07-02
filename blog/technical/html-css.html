@@ -1,0 +1,186 @@
+<!doctype html>
+<!--blog-post for Sprint 2 tech blog-->
+
+<html lang=en>
+
+<head>
+  <meta charset=utf-8>
+  <title>Benson Kawengian</title>
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <link rel=stylesheet href=../../styles/main.css>
+</head>
+
+<body id=blog>
+  <section id=tophead>
+    <h1><a href=../../index.html title="Benson Kawengian">Benson Kawengian</a></h1>
+  </section>
+  <div id=content>
+    <article>
+      <header>
+        <div class=blogparent><a href="./technical-index.html">Technical Blog</a>:</div>
+        <h2>Best practices associated with using classes vs. ids</h2>
+        <small>2 July 2022</small>
+      </header>
+
+      <p>
+        There are three cornerstones technologies of the World Wide Web: HTML, CSS, and JavaScript. HTML (HyperText
+        Markup Language) specifies the content of web pages. CSS (Cascading Style Sheet) specifies the presentation or
+        styling of web pages, and JavaScript specifies the behavior or action of web pages. It sets the background
+        color, font-size, font-family, color and other properties of elements on a web page. CSS can be placed inside or
+        outside of the HTML file.
+      <p>
+        In an HTML, an element is defined by a start tag, some content, and an end tag. In CSS, “selectors” are used to
+        target these HTML elements on our web pages that we want to style. There are a wide variety of CSS selectors
+        available, allowing for different targeting and precision when selecting elements to style.
+      <p>
+      <h3>
+        Classes vs IDs
+      </h3>
+      <p>Two of these selectors, class and id , are used to apply styles to elements based on the class and ID assigned
+        to an HTML element, respectively. Chris Coyier describes this well:
+      </p>
+      <p>
+      <blockquote cite="https://css-tricks.com/the-difference-between-id-and-class">
+        “Maybe a good analogy here is bar codes and serial numbers. Take an iPod in a store. On the packaging will be a
+        bar code. This tells the store what the product is, so when it is scanned, the system knows exactly what the
+        product is and what it costs. It might even be able to know what color it is or where it was kept in the store.
+        All iPod of this same type have the exact same barcode on them.
+        The iPod will also have a serial number on it which is absolutely unique to any other iPod (or any other device)
+        in the world. The serial number doesn’t know the price. It could, but for the store this wouldn’t be a very
+        efficient way to store and use that data. Much easier to use the barcode, so that for example, if the price
+        changed, you could just change the price for that bar code and not every individual serial number in your
+        system.
+        This is much like ID’s and Classes. Information that is reusable should be kept in a class and information that
+        is totally unique should be kept in an ID.” <br>- <a target="_blank"
+          href=https://css-tricks.com/the-difference-between-id-and-class>Coyier</a>
+      </blockquote>
+      </p>
+      <h3>
+        IDs are unique and Classes are not unique to an element
+      </h3>
+      <img src="../../assets/images/technical/2020-05-27.png" alt="difference between ids and class"><br>
+
+      <p>IDs are unique and each element can have only one ID. Each page can have only one element with that ID. Yes, in
+        the entire page. But you can use classes over and over.
+      </p>
+
+      <pre>
+          <code>
+          &lt;div id="list"&gt;
+          &lt;h1&gt; Rugby Awards &lt;/h1&gt;
+          &lt;p class="award"&gt; Winner one &lt;/p&gt;
+          &lt;p class="winner"&gt; Ben &lt;/p&gt; 
+          &lt;p class="award"&gt; Winner two &lt;/p&gt;
+          &lt;p class="winner"&gt; Josh &lt;/p&gt; 
+          &lt;/div &gt;
+          </code>
+        </pre>
+      <h3>
+        Setting Classes and IDs
+      </h3>
+      <p>This is an over simplification, but generally specifying css styling values for classes and IDs on the CSS file
+        or styling blocks can be done
+        this way:
+      </p>
+      <pre>
+        <code>
+          .bigfont {
+            font-size: 4em;
+         }
+        </code>
+      </pre>
+      <p>a dot (.) is used to set a class</p>
+      </p>
+      <pre>
+        <code>
+          #bigfont {
+            font-size: 4em;
+         }
+        </code>
+      </pre>
+      <p>and # is used to set an ID</p>
+
+      <p>Now that we have covered basic overview of classes and IDs, let's discuss some best practices.</p>
+
+      <h3>
+        #1. Plan ahead so you don't over use classes and IDs
+      </h3>
+      <p>Classes and IDs are important and we rely on them to do page styling and manipulation, but making a class or ID
+        for every small thing or segment will clutter your CSS and make yourself or others reading your code confused.
+      </p>
+      <p>Planning is key so that you don't find yourselves with specificity conflicts between your classes, IDs, and
+        other more general selectors.
+      </p>
+      <p>Lastly, you don't want to over-identify something that is already clear from the anchor element itself. For
+        instance (see below), here it is already clear that the &gt;a&gt; anchor element is a link. There is no need to
+        be redundant in classing it as such.
+      </p>
+      <pre>
+      <code>
+      &lt;a href="https://bensonkawengian.com" 
+      class="link"&gt;Bensonkawengian.com &lt;/a&gt;
+      </code>
+      </pre>
+      <h3>
+        #2. Semantics or Words are important
+      </h3>
+      <p>Think about the objective, function and purpose for the classes and IDs so you can name them appropriately and
+        succinctly. My research online suggests that many experts agree that shorter and more generic words are better.
+        Use words that describe the context of the element. For example instead of naming them "right-col", you can
+        consider "sidebar"
+      </p>
+      <p>Keep track of your classes and IDs. I personally found it's useful to clearly identify and comment over them on
+        my CSS sheet.
+      </p>
+      <h3>
+        #3. IDs have a special browser functionality
+      </h3>
+      <p>While classes do not have this ability, the # hex value identifier that we use to set IDs can be used by the
+        browser to locate that element. For example, If you have a URL like http://yourdomain.com#comments, the browser
+        will attempt to locate the element with an ID of “comments” and will automatically scroll the page to show that
+        element.
+      </p>
+      <p>
+        IDs are commonly used in that programming language. The function getElementById allows you to select an element
+        on a web page. It relies on the fact that only one element can share the same ID.</p>
+      <h3>
+        #4. You can use both ID and CSS Class Selectors on a single element
+      </h3>
+      <p>Suppose you have a generic style assigned to a class "background-blue" but wants to a special modification
+        or customisation to a particular div tag. However, when you do this, you need to remember that the ID must be
+        unique for the element or on that page. You could
+        do so using this code:
+      </p>
+      <pre>
+        <code>
+        &lt;div class="background-blue" id="custom-edit"&gt;&lt;/div&gt;
+        </code>
+      </pre>
+      <h3>
+        Sources
+      </h3>
+      <ol>
+        <li><a target="_blank" href=https://css-tricks.com/the-difference-between-id-and-class>The Difference Between
+            ID and Class</a></li>
+        <li><a target="_blank" href=https://dev.to/clairecodes/reasons-not-to-use-ids-in-css-4ni4>Reasons not to use IDs
+            in CSS</a></li>
+        <li><a target="_blank" href=https://en.wikipedia.org/wiki/CSS>CSS From Wikipedia, the free encyclopedia
+        <li><a target="_blank" href=https://meiert.com/en/blog/best-practice-ids-and-classes>Best Practices for ID and
+            Class Names</a></li>
+        <li><a target="_blank" href=https://www.w3schools.com/css/default.asp>CSS Tutorial on W3 Schools
+            ID and Class</a></li>
+        <li><a target="_blank" href=https://careerkarma.com/blog/css-class-vs-id-2>ID vs Class CSS: Understanding the
+            Differences</a></li>
+      </ol>
+
+      <br>
+      <br>
+      <br>
+
+  </div>
+</body>
+<footer>
+  Follow me on instagram @bensonkawengian
+</footer>
+
+</html>
