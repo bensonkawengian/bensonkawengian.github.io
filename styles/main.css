@@ -60,7 +60,7 @@ a{
 }
 
 a:visited{
-	color:rgb(13, 199, 44)8)
+	color:rgb(13, 199, 44)
 }
 
 a:hover{
@@ -99,7 +99,7 @@ code{
 
 img {
 	max-width:100%;
-  display:block
+  display:block;
   height: auto;
 }
 
